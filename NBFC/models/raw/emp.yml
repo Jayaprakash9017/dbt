@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: emp
+    description: "dbt model for employee data"
+    columns:
+      - name: EMPLOYEE_ID
+        description: "Unique employee identifier"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: FIRST_NAME
+        description: "Employee first name"
+
+      - name: LAST_NAME
+        description: "Employee last name"
+        data_tests:
+          - not_null
+
+      - name: EMAIL
+        description: "Employee email address"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PHONE_NUMBER
+        description: "Employee phone number"
+
+      - name: HIRE_DATE
+        description: "Employee hire date"
+        data_tests:
+          - not_null
+
+      - name: JOB_ID
+        description: "Employee job identifier"
+        data_tests:
+          - not_null
+
+      - name: SALARY
+        description: "Employee salary"
+
+      - name: COMMISSION_PCT
+        description: "Employee commission percentage"
+
+      - name: MANAGER_ID
+        description: "Employee manager identifier"
+
+      - name: DEPARTMENT_ID
+        description: "Employee department identifier"

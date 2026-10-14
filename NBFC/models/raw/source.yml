@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: hr1
+    database: hr
+    schema: HR
+
+    tables:
+      - name: COUNTRIES
+
+      - name: REGIONS
+
+      - name: LOCATIONS
+
+      - name: DEPARTMENTS
+
+      - name: JOBS
+
+      - name: EMPLOYEES
+
+      - name: JOB_HISTORY

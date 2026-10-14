@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: loc
+    description: "dbt model for location data"
+    columns:
+      - name: LOCATION_ID
+        description: "Unique location identifier"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: STREET_ADDRESS
+        description: "Location street address"
+
+      - name: POSTAL_CODE
+        description: "Location postal code"
+
+      - name: CITY
+        description: "Location city"
+
+      - name: STATE_PROVINCE
+        description: "Location state or province"
+
+      - name: COUNTRY_ID
+        description: "Identifier of the country where the location is"

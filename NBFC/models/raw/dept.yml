@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dept
+    description: "dbt model for department data"
+
+    columns:
+      - name: DEPARTMENT_ID
+        description: "Unique department identifier"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: DEPARTMENT_NAME
+        description: "Department name"
+        data_tests:
+          - not_null
+
+      - name: MANAGER_ID
+        description: "Manager identifier"
+
+      - name: LOCATION_ID
+        description: "Location identifier"
