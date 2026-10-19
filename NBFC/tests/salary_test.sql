@@ -1,0 +1,1 @@
+select * from {{ ref('emp') }} where salary <= 0

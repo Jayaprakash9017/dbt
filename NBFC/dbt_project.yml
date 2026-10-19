@@ -35,4 +35,7 @@ models:
     raw:
       +materialized: table
       +schema: dbt_hr
+seeds:
+  NBFC:
+    +schema: seed    
       

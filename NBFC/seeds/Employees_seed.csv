@@ -1,0 +1,11 @@
+employee_id,first_name,last_name,department_id,job_title,salary,hire_date,city,email,update_date_time
+101,Ravi,Kumar,20,Data Analyst,62000,2022-03-14,Chennai,ravi.kumar@example.com,2026-10-15 09:30:00
+102,Priya,Sharma,10,HR Specialist,54000,2021-07-01,Bengaluru,priya.sharma@example.com,2026-10-15 10:15:00
+103,Arun,Raj,20,Data Engineer,78000,2020-11-23,Chennai,arun.raj@example.com,2026-10-16 08:45:00
+104,Meena,Iyer,30,Finance Analyst,67000,2023-01-09,Hyderabad,meena.iyer@example.com,2026-10-16 11:20:00
+105,Karthik,Rao,40,Marketing Executive,49000,2024-05-20,Pune,karthik.rao@example.com,2026-10-17 13:05:00
+106,Ananya,Das,10,HR Manager,85000,2019-09-16,Chennai,ananya.das@example.com,2026-10-17 14:10:00
+107,Vikram,Singh,30,Accountant,58000,2022-12-05,Delhi,vikram.singh@example.com,2026-10-18 09:00:00
+108,Divya,Nair,20,BI Developer,73000,2021-04-12,Kochi,divya.nair@example.com,2026-10-18 15:40:00
+109,Suresh,Menon,40,Marketing Analyst,56000,2023-08-28,Bengaluru,suresh.menon@example.com,2026-10-19 08:25:00
+110,Lakshmi,Pillai,30,Finance Manager,92000,2018-02-19,Hyderabad,lakshmi.pillai@example.com,2026-10-19 09:50:00

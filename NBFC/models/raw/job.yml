@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: job
+    description: "Stores job titles and their minimum and maximum salary ranges."
+
+    columns:
+      - name: JOB_ID
+        description: "Unique identifier for each job."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: JOB_TITLE
+        description: "Title or name of the job."
+        data_tests:
+          - not_null
+
+      - name: MIN_SALARY
+        description: "Minimum salary for the job."
+
+      - name: MAX_SALARY
+        description: "Maximum salary for the job."
