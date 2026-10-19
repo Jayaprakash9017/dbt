@@ -1,0 +1,1 @@
+select * from {{ ref('country') }} where country_name is null

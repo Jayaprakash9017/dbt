@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: reg
+    description: "Contains region details."
+    columns:
+      - name: REGION_ID
+        description: "Unique identifier for each region."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: REGION_NAME
+        description: "Name of the region."
+        data_tests:
+          - not_null

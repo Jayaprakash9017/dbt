@@ -1,0 +1,32 @@
+select e.employee_id, 
+       e.first_name,
+	e.last_name,
+	d.department_name,
+	e.salary,
+	e.manager_id
+ from employees e join departments d on e.department_id = d.department_id;
+
+
+
+ref -- it's used to call a model inside the another model
+
+source -- it's used to call a table from source.yml to another model
+
+Note:- Home_work
+
+1) 4models need create config block and yml - Rwa layer
+
+2)Stge layer - need to create one model stg_dept
+  condtion - dept, loc - need ref model
+     cond2 - region table from source
+
+col - dept_name, location_name, region_id, department_id
+
+
+select d.department_name,
+       l.location_id	
+       d.department_id,
+       r.region_id,
+
+from departments d join locations l
+ on d.location_id = l.location_id join region r

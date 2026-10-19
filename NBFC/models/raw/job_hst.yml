@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: job_hst    
+    description: "Stores employee job history, including start date, end date, job ID, and department ID."
+
+    columns:
+      - name: EMPLOYEE_ID
+        description: "Unique employee identifier."
+        data_tests:
+          - not_null
+
+      - name: START_DATE
+        description: "Date when the employee started the job."
+        data_tests:
+          - not_null
+
+      - name: END_DATE
+        description: "Date when the employee ended the job."
+        data_tests:
+          - not_null
+
+      - name: JOB_ID
+        description: "Identifier of the job held by the employee."
+        data_tests:
+          - not_null
+
+      - name: DEPARTMENT_ID
+        description: "Identifier of the department associated with the job."

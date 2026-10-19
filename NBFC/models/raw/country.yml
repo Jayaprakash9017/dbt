@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: country
+    description: "Contains country details and their associated region IDs."
+
+    columns:
+      - name: COUNTRY_ID
+        description: "Unique identifier for each country."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: COUNTRY_NAME
+        description: "Name of the country."
+        data_tests:
+          - not_null
+
+      - name: REGION_ID
+        description: "Identifier of the region associated with the country."
+        data_tests:
+          - not_null
