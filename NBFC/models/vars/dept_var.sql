@@ -1,0 +1,22 @@
+{{
+    config(
+        materialized = 'table',
+        tags = ['insurance'],
+        database = 'HR',
+        unique_key = 'department_id',
+        on_schema_change = 'append_new_columns'
+    )
+}}
+
+select 
+DEPARTMENT_ID,
+DEPARTMENT_NAME,
+MANAGER_ID,
+LOCATION_ID
+ from {{ source('hr1', 'DEPARTMENTS') }} 
+ where 
+ {% if var('mange_id') is none %}
+    MANAGER_ID IS NULL
+{% else %}
+    MANAGER_ID = {{ var('mange_id') }}
+{% endif %}

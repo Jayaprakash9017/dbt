@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dept_inc_del_ins
+    description: "Incremental model for department data"
+
+    columns:
+      - name: department_id
+        description: "Unique department identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: department_name
+        description: "Department name"
+        data_tests:
+          - not_null
+
+      - name: updated_at
+        description: "Last updated timestamp"
+        data_tests:
+          - not_null

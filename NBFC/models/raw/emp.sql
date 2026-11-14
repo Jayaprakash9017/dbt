@@ -1,6 +1,7 @@
 {{
     config(
         materialized = 'table',
+        tags = ['insurance'],
         database = 'HR',
         unique_key = 'employee_id',
         on_schema_change = 'append_new_columns'
