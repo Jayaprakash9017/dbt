@@ -35,7 +35,23 @@ models:
     raw:
       +materialized: table
       +schema: dbt_hr
+
+  # stage:
+  #    +schema: "{{ env_var('DBT_SCHEMAS') }}"
+    vars:
+      +schema: "{{ env_var('DBT_Var_SCHEMAS') }}"
+      
 seeds:
   NBFC:
     +schema: seed    
+
+
+vars:
+  dep_id: 10
+
+  mange_id: null 
+
+  country_id: 
+    - 'UK'
+    - 'US'
       

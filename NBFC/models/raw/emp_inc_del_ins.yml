@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: emp_inc_del_ins
+    description: "Incremental model for employee data"
+
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: "Employee first name"
+        data_tests:
+          - not_null
+
+      - name: last_name
+        description: "Employee last name"
+        data_tests:
+          - not_null
+
+      - name: department_id
+        description: "Employee department identifier"
+
+      - name: salary
+        description: "Employee salary"
+
+      - name: updated_at
+        description: "Last updated timestamp"
+        data_tests:
+          - not_null

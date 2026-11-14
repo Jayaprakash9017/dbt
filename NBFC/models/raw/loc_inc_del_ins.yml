@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: loc_inc_del_ins
+    description: "Incremental model for location data"
+
+    columns:
+      - name: location_id
+        description: "Unique location identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: city
+        description: "City name"
+        data_tests:
+          - not_null
+
+      - name: country_id
+        description: "Country identifier"
+        data_tests:
+          - not_null
+
+      - name: updated_at
+        description: "Last updated timestamp"
+        data_tests:
+          - not_null

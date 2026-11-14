@@ -19,3 +19,17 @@ sources:
       - name: EMPLOYEES
 
       - name: JOB_HISTORY
+
+      - name: EMPLOYEES_inc
+
+      - name: DEPARTMENTS_inc
+
+      - name: LOCATIONS_inc
+      
+      - name: EMPLOYEES_app
+
+      - name: DEPARTMENTS_APP
+
+      - name: LOCATIONS_APP
+
+      - name: EMPLOYEES_snap
