@@ -33,3 +33,7 @@ sources:
       - name: LOCATIONS_APP
 
       - name: EMPLOYEES_snap
+
+      - name: DEPARTMENTS_snap
+
+      - name: LOCATIONS_snap
